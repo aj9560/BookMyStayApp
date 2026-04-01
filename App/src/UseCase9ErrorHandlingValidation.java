@@ -2,15 +2,15 @@ import java.util.*;
 
 // Custom Exception
 class InvalidBookingException extends Exception {
-public InvalidBookingException(String message) {
-super(message);
-}
+    public InvalidBookingException(String message) {
+        super(message);
+    }
 }
 
 // Reservation Class
 class ReservationUC9 {
-String guestName;
-String roomType;
+    String guestName;
+    String roomType;
 
     public ReservationUC9(String guestName, String roomType) {
         this.guestName = guestName;
@@ -20,7 +20,7 @@ String roomType;
 
 // Inventory Service
 class InventoryServiceUC9 {
-Map<String, Integer> rooms = new HashMap<>();
+    Map<String, Integer> rooms = new HashMap<>();
 
     public InventoryServiceUC9() {
         rooms.put("Single", 2);
